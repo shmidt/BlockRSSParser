@@ -68,7 +68,7 @@ static dispatch_queue_t rssparser_success_callback_queue() {
 #pragma mark AFNetworking AFXMLRequestOperation acceptable Content-Type overwriting
 
 + (NSSet *)defaultAcceptableContentTypes {
-    return [NSSet setWithObjects:@"application/xml", @"text/xml",@"application/rss+xml", nil];
+    return [NSSet setWithObjects:@"application/xml", @"text/xml",@"application/rss+xml",@"text/xml; charset=utf-8", nil];
 }
 + (NSSet *)acceptableContentTypes {
     return [self defaultAcceptableContentTypes];
